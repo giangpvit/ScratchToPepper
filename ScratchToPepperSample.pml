@@ -6,9 +6,9 @@
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
-        <File name="scratch" src="lib/scratch.pyc" />
-        <File name="__init__" src="lib/__init__.pyc" />
         <File name="Meow" src="Meow.wav" />
+        <File name="__init__" src="lib/__init__.py" />
+        <File name="scratch" src="lib/scratch.py" />
     </Resources>
     <Topics />
     <IgnoredPaths>

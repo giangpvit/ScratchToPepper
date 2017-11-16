@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="scratchtopepper-2ff844" version="0.0.0">
+<package version="0.0.0" uuid="scratchtopepper-2ff844">
  <names>
   <name lang="en_US">ScratchToPepper</name>
  </names>
@@ -14,7 +14,10 @@
  <contents>
   <behaviorContent path=".">
    <userRequestable/>
-   <nature>interactive</nature>
+   <nature></nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
  </contents>
