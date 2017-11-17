@@ -28,10 +28,9 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="behavior.xar" line="0"/>
             <source>もしかして進行方向に障害物がある</source>
             <comment>Text</comment>
-            <translation type="unfinished">もしかして進行方向に障害物がある</translation>
+            <translation type="obsolete">もしかして進行方向に障害物がある</translation>
         </message>
     </context>
 </TS>

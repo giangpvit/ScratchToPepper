@@ -22,11 +22,5 @@
             <comment>Text</comment>
             <translation type="vanished">こんにちは</translation>
         </message>
-        <message>
-            <location filename="behavior.xar" line="0"/>
-            <source>もしかして進行方向に障害物がある</source>
-            <comment>Text</comment>
-            <translation type="unfinished"></translation>
-        </message>
     </context>
 </TS>
