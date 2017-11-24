@@ -445,7 +445,7 @@ class MyClass(GeneratedClass):
             self.onError(error)]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onSet" type="1" type_size="1" nature="1" inner="0" tooltip="The data is set when a signal is received on this input." id="2" /><Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="Signal sent when the data has been set." id="3" /><Output name="onError" type="3" type_size="1" nature="2" inner="0" tooltip="Error output:&#x0A;- triggered if the language asked cannot be set" id="4" /><Parameter name="Language" inherits_from_parent="0" content_type="3" value="Japanese" default_value="English" custom_choice="1" tooltip="Set the language the robot speaks and understands." id="5"><Choice value="Arabic" /><Choice value="Brazilian" /><Choice value="Chinese" /><Choice value="Czech" /><Choice value="Danish" /><Choice value="Dutch" /><Choice value="English" /><Choice value="Finnish" /><Choice value="French" /><Choice value="German" /><Choice value="Greek" /><Choice value="Italian" /><Choice value="Japanese" /><Choice value="Korean" /><Choice value="MandarinTaiwan" /><Choice value="Norwegian" /><Choice value="Polish" /><Choice value="Portuguese" /><Choice value="Russian" /><Choice value="Spanish" /><Choice value="Swedish" /><Choice value="Turkish" /></Parameter><Resource name="Speech" type="Lock" timeout="0" /></Box><Link inputowner="10" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="0" indexofinput="4" outputowner="4" indexofoutput="3" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box><Box name="ConnectToScratch" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="345" y="47"><bitmap>media/images/box/box-python-script.png</bitmap><script language="4"><content><![CDATA[import scratch
 
 #Constant String
-CONSTANT_HOST = '172.19.44.118'
+CONSTANT_HOST = '172.19.44.156'
 
 class MyClass(GeneratedClass):
 
@@ -454,12 +454,9 @@ class MyClass(GeneratedClass):
 
     def onLoad(self):
         self.myScratch = scratch.Scratch(host=CONSTANT_HOST)
-        try:
-            self.myScratch.connect()
-        except scratch.ScratchError:
-            self.connectionError("接続することができない")
-            self.onInput_onStop()
-            return
+        #try:
+        self.myScratch.connect()
+
         self.myScratch.receive()
         self.xPos = 0.0
         self.yPos = 0.0
